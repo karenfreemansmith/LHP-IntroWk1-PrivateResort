@@ -6,3 +6,20 @@ body {
 a {
   color: #f5f5f5;
 }
+
+h1 {
+    font-family: Lobster;
+}
+
+.jumbotron {
+  background-color: #cc0000;
+  color: #f5f5f5;
+  min-height: 320px;
+}
+
+img {
+  width: 300px;
+  float: right;
+  margin-right: -100px;
+  margin-top: -85px;
+}
