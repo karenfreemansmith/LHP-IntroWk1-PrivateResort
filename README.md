@@ -1,27 +1,29 @@
-# _Private Island Resort_
+# :santa: [Santa's Secret Island](http://karenfreemansmith.github.io/resort) :christmas_tree:
+![project screenshot](/img/screenshot.jpg)
 
-#### _Basic Website_
+__Version 1: March 24, 2016__
 
-#### By
-_Karen Freeman-Smith_
+## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
 
-## Description
-_A website to promote a fictional resort on an equally fictional private island._
+### Description
+__*Website for a fictional private island resort*__
 
-## Setup/Installation
-_basic html files, double click to view in web browser_
+### Setup/Installation
+*None required. Clone or download and extract to use*
 
-## Known Bugs
-_Lots of content needed, and better css!_
+### Support & Contact
+For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
 
-## Support & Contact
-_ For questions or comments, please email Karen at karenfreemansmith@gmail.com_
+### Known Issues
+* Santa graphic could use a touch-up
+* Needs some (more) filler text on pages
+* Could use some nice photos too
+* And maybe a reservation form?
 
-## Technologies Used
-_HTML, CSS_
+### Technologies Used
+###### HTML, CSS, Bootstrap
 
-###  License
-*GNU*
+### Legal
+*Licensed under the GNU General Public License v3.0*
 
-
-Copyright (c) 2016 **_Karen Freeman-Smith_*
+Copyright (c) 2016 **_Karen Freeman-Smith_**
