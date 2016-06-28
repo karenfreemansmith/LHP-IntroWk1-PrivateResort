@@ -1,8 +1,9 @@
 var gulp = require('gulp');
-var sync = require('browser-sync');
+var sync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var maps = require('gulp-sourcemaps');
 var jshint = require('gulp-jshint');
+var pages = require('gulp-gh-pages');
 
 //Test Gulp Install
 gulp.task('default', function() {
@@ -49,4 +50,34 @@ gulp.task('jshint', function() {
   return gulp.src(['js/*.js'])
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
+});
+
+//Build and Deploy
+gulp.task('deploy', ['build'], function() {
+    return gulp.src('./dist/**/*')
+      .pipe(pages());
+});
+
+gulp.task('build', ['staticHTML', 'staticMedia', 'staticCSS', 'staticJS'], function() {
+  //no tasks here...???
+});
+
+gulp.task('staticHTML', function() {
+  return gulp.src('./*.html')
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('staticCSS', function() {
+  return gulp.src('./css/*.css')
+    .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('staticMedia', function() {
+  return gulp.src('./img/*.*')
+    .pipe(gulp.dest('./dist/img'));
+});
+
+gulp.task('staticJS', function() {
+  return gulp.src('./js/*.js')
+    .pipe(gulp.dest('./dist/js'));
 });
