@@ -4,7 +4,7 @@
   "description": "A website for Santa's private island paradise",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -22,10 +22,12 @@
   "homepage": "https://github.com/karenfreemansmith/resort#readme",
   "dependencies": {
     "browser-sync": "^2.13.0",
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
-    "jshint": "^2.9.2"
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3"
   }
 }

@@ -19,6 +19,7 @@ gulp.task('serve', function() {
   });
   gulp.watch(['*.html'],['htmlBuild']);
   gulp.watch(['scss/*.scss'],['scssBuild']);
+  gulp.watch(['js/*.js'],['jsBuild']);
 });
 
 //Manage HTML files
@@ -40,6 +41,10 @@ gulp.task('scssCSS', function() {
 });
 
 //Manage JS files
+gulp.task('jsBuild', function() {
+  sync.reload();
+});
+
 gulp.task('jshint', function() {
   return gulp.src(['js/*.js'])
     .pipe(jshint())
