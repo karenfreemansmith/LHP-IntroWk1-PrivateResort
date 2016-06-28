@@ -1,12 +1,18 @@
 # :santa: [Santa's Secret Island](http://karenfreemansmith.github.io/resort) :christmas_tree:
 ![project screenshot](/img/screenshot.jpg)
 
-__Version 1: March 24, 2016__
+__Version 1.1.0: June 28, 2016__
 
 ## by [Karen Freeman-Smith](http://karenfreemansmith.github.io)
 
 ### Description
 __*Website for a fictional private island resort*__
+v1.1.0: adding npm and gulp tools for development
+New Features:
+* Add weather for South Pacific from API (also North Pole?)
+* Add assets (text and photos)
+* Add reservation form and confirmation
+* Add admin tools to update events/photos etc
 
 ### Setup/Installation
 *None required. Clone or download and extract to use*

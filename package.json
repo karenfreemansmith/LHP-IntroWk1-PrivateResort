@@ -1,0 +1,23 @@
+{
+  "name": "resort",
+  "version": "1.0.0",
+  "description": "A website for Santa's private island paradise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karenfreemansmith/resort.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Karen Freeman-Smith",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/karenfreemansmith/resort/issues"
+  },
+  "homepage": "https://github.com/karenfreemansmith/resort#readme"
+}
