@@ -1,0 +1,29 @@
+$black: #111;
+$white: #f9f9f9;
+$red: #cc0000;
+
+body {
+  background: $black;
+  color: $white;
+}
+
+a {
+  color: $white;
+}
+
+h1 {
+    font-family: Lobster;
+}
+
+.jumbotron {
+  background-color: $red;
+  color: $white;
+  min-height: 320px;
+}
+
+img {
+  width: 300px;
+  float: right;
+  margin-right: -100px;
+  margin-top: -85px;
+}
