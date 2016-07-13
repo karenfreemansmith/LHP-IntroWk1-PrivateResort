@@ -3,45 +3,119 @@
   <head lang="en">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-compatible">
-    <meta name="viewport" content=width=device-width, initial-scale=1"">
+    <meta name="viewport" content="width=device-width", initial-scale=1>
     <title>Santa's Secret Island</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   </head>
-  <body>
+  <body ng-app ng-init="page='main'">
     <div class="container">
     <div class="nav nav-tabs pull-right">
-      <li class="active"><a href="index.html">home</a></li>
-      <li><a href="accomodations.html">accomodations</a></li>
-      <li><a href="activities.html">activities</a></li>
-      <li><a href="travel.html">travel</a></li>
-      <li><a href="pictures.html">pictures</a></li>
+      <li><a ng-click="page='main'" href="">home</a></li>
+      <li><a ng-click="page='accomodations'" href="">accomodations</a></li>
+      <li><a ng-click="page='activities'" href="">activities</a></li>
+      <li><a ng-click="page='travel'" href="">travel</a></li>
+      <li><a ng-click="page='pictures'" href="">pictures</a></li>
     </div>
 
   <div class="jumbotron">
     <h1>Santa's Secret Island</h1>
     <img src="img/santa.png">
-    <h3>Who is Santa Claus?</h3>
-    <p>Santa is that jolly old elf who makes the rounds each year, breaking and entering homes all over the world to ensure each child gets at least one Christmas present they will actually like.</p>
+    <div class="main lead" ng-show="page=='main'">
+      <h3>Who is Santa Claus?</h3>
+      <p>Santa is that jolly old elf who makes the rounds each year, breaking and entering homes all over the world to ensure each child gets at least one Christmas present they will actually like.</p>
+    </div>
+    <div class="activities lead" ng-show="page=='activities'">
+      <h3>Activities</h3>
+      <p></p>
+    </div>
+    <div class="accomodations lead" ng-show="page=='accomodations'">
+      <h3>Accomodations</h3>
+      <p>Space is limited, so reserve yours today!</p>
+    </div>
+    <div class="travel lead" ng-show="page=='travel'">
+      <h3>Travel</h3>
+      <p></p>
+    </div>
+    <div class="pictures lead" ng-show="page=='pictures'">
+      <h3>Pictures</h3>
+      <p>Coming Soon!</p>
+    </div>
   </div>
-  <div class="row">
-  <div class="col-sm-4">
-    <h3>What does Santa Do After Christmas?</h3>
-    <p>After eating close to 7 billion cookies and drinking over a billion gallons of milk, Santa needs a little break and a lot of exercise. He spends the first three months of every year on his own private island recuperating with his reindeer.</p>
-</div>
-<div class="col-sm-4">
-      <h3>Where is Santa's Secret Island?</h3>
-    <p>Santa's secret island is located in the South pacific, not too far off the coast of Antarctica. January through March is the sunny season and boasts relatively mild temperatures.</p>
-</div>
-<div class="col-sm-4">
-    <h3>When Do You Want to Visit Santa?</h3>
-    <p>Starting this year, Santa is accepting reservations from a select few. Of you would like you would like an invitation be sure to be very, very good this year!</p>
+  <div class="main details row" ng-show="page=='main'">
+    <div class="col-sm-4">
+      <h3>What does Santa Do After Christmas?</h3>
+      <p>After eating close to 7 billion cookies and drinking over a billion gallons of milk, Santa needs a little break and a lot of exercise. He spends the first three months of every year on his own private island recuperating with his reindeer.</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Where is Santa's Secret Island?</h3>
+      <p>Santa's secret island is located in the South pacific, not too far off the coast of Antarctica. January through March is the sunny season and boasts relatively mild temperatures.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>When Do You Want to Visit Santa?</h3>
+      <p>Starting this year, Santa is accepting reservations from a select few. Of you would like you would like an invitation be sure to be very, very good this year!</p>
+    </div>
+  </div>
+  <div class="activities details row" ng-show="page=='activities'">
+    <div class="col-sm-4">
+      <h3>Naughty</h3>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Nice</h3>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Reindeer Games</h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="accomodations details row" ng-show="page=='accomodations'">
+    <div class="col-sm-4">
+      <h3>Igloos</h3>
+      <p>We have a variety of 2, 4, and 6-man igloos. There is also an option to build your own igloo.</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>The Lodge</h3>
+      <p>Exclusively for Santa's favorites, enjoy your evenings by a roaring fire with elf-served delicacies.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>The Workshop</h3>
+      <p>A communal space ideal for large groups.</p>
+    </div>
+  </div>
+  <div class="travel details row" ng-show="page=='travel'">
+    <div class="col-sm-4">
+      <h3>By Plane</h3>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>By Boat</h3>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>By Reindeer</h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="pictures details row" ng-show="page=='pictures'">
+    <div class="col-sm-4">
+      <h3>Press</h3>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Santa's Favorites</h3>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Guest's Favorites</h3>
+      <p></p>
+    </div>
   </div>
 </div>
-</div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
 </html>
