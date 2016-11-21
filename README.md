@@ -9,22 +9,22 @@ __*Website for a fictional private island resort*__
 v2.0.0: refactored into Angular.js SPA
 v1.1.0: adding npm and gulp tools for development
 
-### Setup/Installation
-*None required. Clone or download and extract to use*
+## Technologies Used
+HTML, CSS
 
-### Support & Contact
-For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
+## Setup/Installation
+* [View on Github Pages](https://karenfreemansmith.github.io/EpicIntroWk1-PetWebsite)
+* _OR_
+* Clone diectory 
+* Open index.html in your favorite browser
 
-### Known Issues
-* Add assets (text and photos)
-* Add reservation form and confirmation
-* Add admin tools to update events/photos etc
-* Add weather for South Pacific from API (also North Pole?)
+## Support & Contact
+For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
 
-### Technologies Used
-###### HTML, CSS, Bootstrap, Angular.js
+## Known Issues
+* None
 
-### Legal
+## Legal
 *Licensed under the GNU General Public License v3.0*
 
-Copyright (c) 2016 **_Karen Freeman-Smith_**
+Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io)_ All Rights Reserved.
